@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+       <script src="/socket.io/socket.io.js"></script>
+        <script src="client.js"></script>
+        <link rel="stylesheet" type="text/css" href="/checkers.css" />
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    </head>
+    <body>
+
+      <div id="title">
+          <h1>CS5003 Checkers Game</h1>
+      </div>
+
+          <div id='message'></div>
+
+		      <button id="start">
+              <span>START</span>
+          </button>
+
+          <button id="reset">
+              <span>RESET</span>
+          </button>
+
+          <div class="blackTurn"></div>
+
+
+          <div id='board'></div>
+
+          <div class="whiteTurn"></div>
+
+          <button id="quit">
+              <span>QUIT</span>
+          </button>
+
+          <div id="chat">
+            <div id="chat-window">
+              <div id="title1">Chatbox</div>
+            <div id="output"></div>
+            </div>
+            <div id="place">
+            <input id="handle" type="text" placeholder="Player Name"/>
+            <input id="newMessage" type="text" placeholder="Message"/>
+            <button id="send">Send</button>
+            </div>
+      </body>
+</html>

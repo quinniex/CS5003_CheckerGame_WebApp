@@ -1,0 +1,183 @@
+@import 'https://fonts.googleapis.com/css?family=Suez+One&subset=latin-ext';
+
+
+body {
+    background: #e2e2e2;
+    text-align: center;
+    font-family: 'Suez One', serif;
+}
+
+body > * {
+    margin: 10px auto;
+}
+
+#board {
+    z-index: 0;
+    margin: 0px auto;
+    position: static;
+    height: 640px;
+    width: 640px;
+    font-size: 0px;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+
+  }
+
+  #black{
+    position:absolute;
+    top:300px;
+    left:700px;
+    width:200px;
+    height:200px;
+    font-size: 20px;
+}
+#white{
+    position:absolute;
+    top:300px;
+    right:700px;
+    width:200px;
+    height:200px;
+    font-size: 20px;
+}
+
+.blackTurn{
+
+  height: 10px;
+  width: 640px;
+  background-color: red;
+  margin-bottom: 0px;
+}
+
+.whiteTurn{
+
+  height: 10px;
+  width: 640px;
+  background-color: red;
+  margin-top: -10px;
+}
+
+  .cell {
+    position: relative;
+    display: inline-flex;
+    height: 80px;
+    width: 80px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .piece {
+    z-index: 1;
+    position: absolute;
+    margin: 10%;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+  }
+
+  .black {
+    background: #8B4513;
+  }
+
+  .white {
+    background: #D2B48C;
+  }
+
+  .piece.black {
+    background: black;
+    border: 2px solid #ccc;
+    }
+
+  .piece.white {
+    background: white;
+    border: 2px solid #555;
+  }
+
+  .validCell {
+    background: #91c4e0;
+
+  }
+
+  .validCell.drop-hover{
+    background: #AAE220;
+
+  }
+
+  .piece .kingCenter {
+    display:none;
+    padding:4px;
+  }
+
+
+  .piece.black .kingCenter {
+    color: white;
+  }
+
+  .piece.white .kingCenter {
+    color: black;
+  }
+
+  .piece.king .kingCenter {
+    display:inline-block;
+    font-size: 50px;
+    margin-top:-10px;
+  }
+
+  #message{
+    text-align: center;
+    font-size: 1.5em;
+    color: orange;
+  }
+
+  button {
+      background: #fff;
+      width: 110px;
+      height: 35px;
+      border: 0;
+      border-radius: 5px;
+      margin: 15px 0 0 0;
+      padding: 2px;
+      font-weight: bold;
+      font-size: 16px;
+      box-shadow: 0 7px 30px rgba(62, 9, 11, .3);
+  }
+
+  #chat { 
+    border: 1px solid #999; 
+    float: right; 
+    position: relative; 
+    margin: 0 5px; 
+  }
+
+  #title1 { 
+    padding: 0.5em; 
+    background-color: #8B4513; 
+    color: white; 
+  }
+
+
+  #handle {
+    font-size: 16px;
+      border-radius: 5px;
+      margin: 15px 0 0 0;
+      padding: 2px;
+  }
+  
+  #newMessage {
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 15px 0 0 0;
+    padding: 2px;
+  }
+
+  @media only screen and (max-width : 640px){
+	#board{
+		width: 400px;
+		height: 400px;
+	}
+
+	.cell{
+		width: 50px;
+		height: 50px;
+	}
+
+}
